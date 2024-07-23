@@ -12,5 +12,4 @@ criteria = lambda child: child['age'] > 3 and child['height'] > 100
 # Filter the eligible children using list comprehension
 eligible_children = [child for child in children if criteria(child)]
 
-# Print the eligible children
 print("Eligible children for the fun park:", eligible_children)

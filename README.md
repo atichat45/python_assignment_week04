@@ -2,18 +2,18 @@
 
 Intermediate Python Programming Assignments  
 
-**Topic**:  
+**Topic**:
 1) Git repository  
 2) Module and Package  
 3) Real-world problem in dictionary and list comprehension  
 
 
-**Submission**:  
+**Submission**:
 1) Take a screenshot of your sourcecode to Word and upload as one pdf file.  
 2) Raise your hand to ask the TA to check the result  
 
 
-**Assignment 1**  
+**Assignment 1**
 **Creating and Initializing a Git Repository on GitHub**  
 Create and initialize a Git repository on GitHub to track changes in your project.  
 **Instructions:**  
@@ -26,7 +26,7 @@ Submission:
 - Put the URL of GitHub into the submission pdf file.  
 
 
-**Assignment 2**  
+**Assignment 2**
 Creating a New Branch and Committing Changes  
 Create a new branch in your Git repository and commit changes to that branch.  
 **Instructions:**  
@@ -39,7 +39,7 @@ Submission:
 - Put the URL of GitHub into the submission pdf file.  
 
 
-**Assignment 3: Merging Branches in Git**  
+**Assignment 3: Merging Branches in Git**
 Merge changes from the `feature` branch into the `main` branch in your Git repository.  
 **Instructions:**  
 1. Switch to the `main` branch in your local repository.  
@@ -49,7 +49,7 @@ Submission:
 - Put the URL of GitHub into the submission pdf file.  
 
 
-**Assignment 4: Defining Functions in Python**  
+**Assignment 4: Defining Functions in Python**
 Define and use functions in Python to perform specific tasks.    
 **Instructions:**  
 1. Create a new Python file named `calculator.py`.  
@@ -60,9 +60,9 @@ Define and use functions in Python to perform specific tasks.
 6. Write a main block that calls each function with sample inputs and prints the results.  
 
 
-**Assignment 5: Using Lambda Functions in Python**  
+**Assignment 5: Using Lambda Functions in Python**
 Rewrite the functions from Assignment 4 using lambda functions.  
-**Instructions:**  
+**Instructions:**
 1. Create a new Python file named `lambda_calculator.py`.  
 2. Define a lambda function for addition that takes two arguments and returns their sum.  
 3. Define a lambda function for subtraction that takes two arguments and returns their difference.  
@@ -71,9 +71,9 @@ Rewrite the functions from Assignment 4 using lambda functions.
 6. Write a main block that calls each lambda function with sample inputs and prints the results.  
 
 
-**Assignment 6: Importing Modules in Python**  
+**Assignment 6: Importing Modules in Python**
 Import and use modules in Python to enhance functionality.  
-Instructions:  
+Instructions:
 1. Create a new Python file named `string_operations.py`.  
 2. Define functions for common string operations:  
     - `reverse_string`: Reverses a given string.  
@@ -84,7 +84,7 @@ Instructions:
 4. Import the `string_operations` module in `main.py`.  
 5. Use the imported functions to perform operations on sample strings and print the results.  
 Example of main.py  
-```python  
+```python
 # Importing the string_operations module  
 import string_operations as so  
 
@@ -100,7 +100,7 @@ print("Uppercase:", so.uppercase_string(sample_string))
 
 Assignment 7: Creating Packages in Python  
 Organize your code into packages to improve modularity and reusability. Use the knowledge from Assignments 4 and 6.  
-**Instructions:**  
+**Instructions:**
 1. Create a directory named `utilities`.  
 2. Inside `utilities`, create an `__init__.py` file.  
 3. Create a module named `calculator.py` inside `utilities` and include the functions defined in Assignment 4.  
@@ -109,7 +109,7 @@ Organize your code into packages to improve modularity and reusability. Use the 
 7. Import functions from all three modules (`calculator` and `string_operations`) in `main.py`.  
 8. Use the imported functions to perform operations and print the results.  
 Example of main.py  
-```python  
+```python
 # Importing modules from the utilities package
 from utilities.calculator import add as add_def, subtract as subtract_def, multiply as multiply_def, divide as divide_def  
 from utilities.string_operations import reverse_string, capitalize_string, lowercase_string, uppercase_string  
@@ -132,14 +132,14 @@ print("Uppercase:", uppercase_string(sample_string))
 
 ```  
 
-Expected output:  
+Expected output:
 Using calculator.py:  
 Addition: 15  
 Subtraction: 5  
 Multiplication: 50v
 Division: 2.0  
 
-Using string_operations.py:  
+Using string_operations.py:
 Original: hello World  
 Reversed: dlroW olleh  
 Capitalized: Hello world  
@@ -147,9 +147,9 @@ Lowercase: hello world
 Uppercase: HELLO WORLD  
 
 
-**Assignment 8: Filtering and Modifying a List of Student Grades**  
+**Assignment 8: Filtering and Modifying a List of Student Grades**
 Imagine you have a list of student grades and you need to create a list of students who have passed (with grades 60 and above) and give a 5% bonus to those grades.  
-**Instruction**:  
+**Instruction**:
 1. Define a list of integers named `grades` containing student grades.  
    grades = [55, 70, 65, 40, 90, 85, 50, 77]  
 2. Use a list comprehension to create a new list named `passed_with_bonus` that:  
@@ -160,9 +160,9 @@ Expected Output:
 Grades after filtering and applying bonus: [73.5, 68.25, 94.5, 89.25, 80.85]  
 
 
-**Assignment 9: Filtering Eligible Children for a Fun Park**  
+**Assignment 9: Filtering Eligible Children for a Fun Park**
 Imagine you have a list of dictionaries where each dictionary contains a child's name, age, and height. You need to create a new list of children who are eligible to join a fun park. A child is eligible if their age is greater than 3 and their height is greater than 100 cm.  
-**Instructions:**  
+**Instructions:**
 1. Define a list of dictionaries named `children`, where each dictionary contains a `name`, `age`, and `height`.  
    children = [ {"name": "Alice", "age": 2, "height": 95}, {"name": "Bob", "age": 4, "height": 105}, {"name": "Charlie", "age": 3, "height": 110}, {"name": "David", "age": 5, "height": 102}, {"name": "Eve", "age": 6, "height": 99} ]  
 2. Use a list comprehension to create a new list named `eligible_children` that:  
@@ -172,12 +172,12 @@ Imagine you have a list of dictionaries where each dictionary contains a child's
 Eligible children for the fun park: [{'name': 'Bob', 'age': 4, 'height': 105}, {'name': 'David', 'age': 5, 'height': 102}]  
 
 
-**Assignment 10: Filtering Eligible Children for a Fun Park (Using Lambda Function)**  
+**Assignment 10: Filtering Eligible Children for a Fun Park (Using Lambda Function)**
 Student can incorporate a lambda function into the list comprehension for filtering eligible children.  
-**Instructions:**v
+**Instructions:**
 1. Define a list of dictionaries named `children`, where each dictionary contains a `name`, `age`, and `height`.  
    children = [ {"name": "Alice", "age": 2, "height": 95}, {"name": "Bob", "age": 4, "height": 105}, {"name": "Charlie", "age": 3, "height": 110}, {"name": "David", "age": 5, "height": 102}, {"name": "Eve", "age": 6, "height": 99} ]  
 2. Use a lambda function named criteria to define the eligibility criteria. `criteria` is a lambda function that takes a dictionary `child` and returns `True` if the child's age is greater than 3 and height is greater than 100 cm.  
 3. Print the `eligible_children` list to display the names, ages, and heights of the eligible children.  
-**Expected Output:**  
+**Expected Output:**
 Eligible children for the fun park: [{'name': 'Bob', 'age': 4, 'height': 105}, {'name': 'David', 'age': 5, 'height': 102}]  
